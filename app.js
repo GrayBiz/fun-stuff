@@ -24,7 +24,12 @@ var people = [
 var callPermutate = function() {
     var word = document.getElementById('textBox').value
     document.getElementById('output').innerHTML = '';
+    if (word.length < 7){
     recursivePermutate(word, '');
+    }
+    else {
+        document.getElementById('output').innerHTML = "Please pick a word with 6 or less letters.";
+    }
 }
 
 function recursivePermutate(rest, soFar) {
