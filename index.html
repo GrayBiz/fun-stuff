@@ -1,20 +1,50 @@
-<!doctype HTML>
+<!DOCTYPE html>
+<html ng-app="myApp">
 
 <head>
-    <title>Word Permutations</title>
 
+    <!--    Setting the Title of the app-->
+    <Title>Gray Mail</Title>
 
+    <!--    Loading Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--    Loading Site CSS-->
+    <link rel="stylesheet" href="css/app.css">
+    <!--    End loading stylesheets-->
 </head>
 
 <body>
 
-    <script src="underscore.js"></script>
-    <script src="app.js"></script>
-    
-    <input type="text" id="textBox" value="tennis" />
-    <button onclick="callPermutate()">Click to Permutate</button>
-    <div id="output">
-        
+    <!--    Inbox controller initialization-->
+    <div ng-controller="TestCtrl">
+        <h1>{{ title }}</h1>
+        <input type="text" ng-model="title" placeholder="Write a title here">
     </div>
 
+
+    <!--    Loading in all javascript-->
+
+    <!-- jQuery -->
+    <script src="javascript/jquery-1.12.0.js"></script>
+    <!-- angular -->
+    <script src="javascript/angular.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-beta.2/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-beta.2/angular-resource.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--custom-->
+    <script src="javascript/app.js"></script>
+
+    <!--    end loading javascript-->
+
+    <!--    Creating custom javascript to handle TestCtrl-->
+    <script>
+        myApp.controller('TestCtrl', ['$scope', function ($scope) {
+            $scope.title = 'Example Title';
+
+        }]);
+    </script>
+
 </body>
+
+</html>
