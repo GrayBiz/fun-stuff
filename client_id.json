@@ -1,0 +1,11 @@
+{
+    "web": {
+        "client_id": "1060395591953-c64be472iiol0f0dot7gum71jogtp1r3.apps.googleusercontent.com",
+        "project_id": "steadfast-karma-120902",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret": "J2W3AKWHHNG3ri35gtDRpeEh",
+        "javascript_origins": ["http://graybiz.github.io"]
+    }
+}
